@@ -30,7 +30,7 @@
 
     class Divide implements Operator{
         public function operate(float $firstNumber, float $secondNumber){
-        	try{
+            try{
             	if ($secondNumber == 0){
                 	throw new Exception("Fail");
             	}

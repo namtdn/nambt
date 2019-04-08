@@ -11,10 +11,10 @@ class Calculator {
 
 
 calculator = new Calculator();
-console.log(calculator.calculate(new subtraction(), process.argv[2], process.argv[3]));
-console.log(calculator.calculate(new addition(), process.argv[2], process.argv[3]));
+console.log("Subtraction : "+ calculator.calculate(new subtraction(), process.argv[2], process.argv[3]));
+console.log("Addition : "+ calculator.calculate(new addition(), process.argv[2], process.argv[3]));
 try {
-    console.log(calculator.calculate(new division(), process.argv[2], process.argv[3]));
+    console.log("Division : "+ calculator.calculate(new division(), process.argv[2], process.argv[3]));
 }
 catch(e) {
     console.log(e);

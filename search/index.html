@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Search User</title>
+    </head>
+    <body>
+
+    <ul>
+        {% for item in test %}
+        <li>ID: {{ item.id }}</li>
+        <li>Name: {{ item.name }}</li>
+        {% else %}
+        <li>Cannot find any user</li>
+        {% endfor %}
+    </ul>
+
+    </body>
+</html>
